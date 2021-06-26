@@ -1,0 +1,919 @@
+{
+    "_id": {
+        "$oid": "5e206ad21497ada1af9f3fc5"
+    },
+    "page_list": [
+        {
+            "mtee_page_component_list": [
+                {
+                    "mtee_page_component_item_list": [
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Tietoa"
+                                },
+                                {
+                                    "Swedish": "Info"
+                                },
+                                {
+                                    "English": "Info"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "navbar tab 1",
+                            "mtee_page_component_item_seq": "1"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "FAQ"
+                                },
+                                {
+                                    "Swedish": "FAQ"
+                                },
+                                {
+                                    "English": "FAQ"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "navbar tab 2",
+                            "mtee_page_component_item_seq": "2"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Admin"
+                                },
+                                {
+                                    "Swedish": "Admin"
+                                },
+                                {
+                                    "English": "Admin"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "navbar tab 3",
+                            "mtee_page_component_item_seq": "3"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Kieli"
+                                },
+                                {
+                                    "Swedish": "Språk"
+                                },
+                                {
+                                    "English": "Language"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "navbar tab 4",
+                            "mtee_page_component_item_seq": "4"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Kirjaudu"
+                                },
+                                {
+                                    "Swedish": "Logga in"
+                                },
+                                {
+                                    "English": "Log in"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "navbar tab 5",
+                            "mtee_page_component_item_seq": "5"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Rekisteröidy"
+                                },
+                                {
+                                    "Swedish": "Registering"
+                                },
+                                {
+                                    "English": "Register"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "navbar tab 6",
+                            "mtee_page_component_item_seq": "6"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Palaute"
+                                },
+                                {
+                                    "Swedish": "Återkoppling"
+                                },
+                                {
+                                    "English": "Feedback"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "navbar tab 7",
+                            "mtee_page_component_item_seq": "7"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Mittaristo"
+                                },
+                                {
+                                    "Swedish": "Mätare"
+                                },
+                                {
+                                    "English": "Measure my teaching"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "navbar tab 8",
+                            "mtee_page_component_item_seq": "8"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Vaihda salasana"
+                                },
+                                {
+                                    "Swedish": "Byta lösenord"
+                                },
+                                {
+                                    "English": "Change password"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "navbar tab 9",
+                            "mtee_page_component_item_seq": "9"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Kirjaudu ulos"
+                                },
+                                {
+                                    "Swedish": "Logga ut"
+                                },
+                                {
+                                    "English": "Logout"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "navbar tab 10",
+                            "mtee_page_component_item_seq": "10"
+                        }
+                    ],
+                    "mtee_page_component_name": "pagelayout"
+                }
+            ],
+            "mtee_page_name": "index",
+            "mtee_page_route": "/"
+        },
+        {
+            "mtee_page_component_list": [
+                {
+                    "mtee_page_component_item_list": [
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Paras tapa ennustaa tulevaisuus on luoda se"
+                                },
+                                {
+                                    "Swedish": "Bäst sätt att spå framtid är att skapa det själv"
+                                },
+                                {
+                                    "English": "The best way to predict the future is to create it"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_app_tagline",
+                            "mtee_page_component_item_seq": "1"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Abraham Lincoln"
+                                },
+                                {
+                                    "Swedish": "Abraham Lincoln"
+                                },
+                                {
+                                    "English": "Abraham Lincoln"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_app_footer",
+                            "mtee_page_component_item_seq": "2"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Tervetuloa käyttämään MTEE:tä ja arvioimaan toimintaasi yrittäjyyskasvattajana. Vastaaminen tapahtuu anonyymisti, mutta jotta pääset seuraamaan kehittymistäsi sinun tulee luoda itsellesi käyttäjäprofiili. Aloita kohdasta Rekisteröidy."
+                                },
+                                {
+                                    "Swedish": "Välkommen till MTEE! ..."
+                                },
+                                {
+                                    "English": "Welcome to MTEE! Evaluate your activity as a teacher in entrepreneurial learning. Replying is anonymous, but to be able to follow your development you should create a user profile. Start from Registration."
+                                }
+                            ],
+                            "mtee_page_component_item_name": "tabcontent",
+                            "mtee_page_component_item_seq": "3"
+                        },
+                        {
+                            "comment": "this is just a comment text for example of using comment texts",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "MTEE työkalu on Lappeenrannan-Lahden teknillisen yliopiston (LUT yliopisto) laatima työkalu perus- ja toisen asteen opettajille sekä rehtoreille."
+                                },
+                                {
+                                    "Swedish": "MTEE är en mätare..."
+                                },
+                                {
+                                    "English": "MTEE is a tool developed by LUT University for primary and secondary school teachers and principals."
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_funding_messaging",
+                            "mtee_page_component_item_seq": "4"
+                        }
+                    ],
+                    "mtee_page_component_name": "pagelayout"
+                }
+            ],
+            "mtee_page_name": "landing",
+            "mtee_page_route": "/"
+        },
+        {
+            "mtee_page_component_list": [
+                {
+                    "mtee_page_component_item_list": [
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Syötä seuraavat tiedot kirjautuaksesi sisään MTEE:hen."
+                                },
+                                {
+                                    "Swedish": "Ge din kunskap för att logga in..."
+                                },
+                                {
+                                    "English": "Provide your details below to login into MTEE."
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_login_tigline",
+                            "mtee_page_component_item_seq": "1"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Käyttäjätunnus tai sähköpostiosoite"
+                                },
+                                {
+                                    "Swedish": "Användarnamn eller e-post"
+                                },
+                                {
+                                    "English": "User Id or Email"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_user_id",
+                            "mtee_page_component_item_seq": "2"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Käyttäjätunnus tai sähköpostiosoite"
+                                },
+                                {
+                                    "Swedish": "Användarnamn eller e-post"
+                                },
+                                {
+                                    "English": "User Id or Email"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_user_id_plchldr",
+                            "mtee_page_component_item_seq": "3"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Salasana"
+                                },
+                                {
+                                    "Swedish": "Lösenord"
+                                },
+                                {
+                                    "English": "Password"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_user_pwd",
+                            "mtee_page_component_item_seq": "4"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Salasana"
+                                },
+                                {
+                                    "Swedish": "Lösenord"
+                                },
+                                {
+                                    "English": "Password"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_user_pwd_plchldr",
+                            "mtee_page_component_item_seq": "5"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Kirjaudu sisään"
+                                },
+                                {
+                                    "Swedish": "Logga in"
+                                },
+                                {
+                                    "English": "Log In"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_login_btn",
+                            "mtee_page_component_item_seq": "7"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Unohtuiko salasana"
+                                },
+                                {
+                                    "Swedish": "Lösenord glömt..."
+                                },
+                                {
+                                    "English": "Forgot Password"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_forgot_pwd_btn",
+                            "mtee_page_component_item_seq": "8"
+                        }
+                    ],
+                    "mtee_page_component_name": "pagelayout"
+                }
+            ],
+            "mtee_page_name": "login",
+            "mtee_page_route": "/login"
+        },
+        {
+            "mtee_page_component_list": [
+                {
+                    "mtee_page_component_item_list": [
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Rekisteröi"
+                                },
+                                {
+                                    "Swedish": "Registera"
+                                },
+                                {
+                                    "English": "Register Yourself"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_register_tagline",
+                            "mtee_page_component_item_seq": "1"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Syntymävuosi"
+                                },
+                                {
+                                    "Swedish": "Födelseår"
+                                },
+                                {
+                                    "English": "Year of birth"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_user_yob",
+                            "mtee_page_component_item_seq": "2"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Mies      /     Nainen     /     Muu"
+                                },
+                                {
+                                    "Swedish": "Man       /     Kvinna      /     Annan"
+                                },
+                                {
+                                    "English": "Male      /     Female     /     Other"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_user_gender",
+                            "mtee_page_component_item_seq": "3"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Käyttäjätunnus"
+                                },
+                                {
+                                    "Swedish": "Användarnam"
+                                },
+                                {
+                                    "English": "User Id"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_user_id",
+                            "mtee_page_component_item_seq": "4"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Käyttäjätunnus"
+                                },
+                                {
+                                    "Swedish": "Användarnam"
+                                },
+                                {
+                                    "English": "User Id"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_user_id_plchldr",
+                            "mtee_page_component_item_seq": "5"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Salasana"
+                                },
+                                {
+                                    "Swedish": "Lösenord"
+                                },
+                                {
+                                    "English": "Password"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_user_pwd",
+                            "mtee_page_component_item_seq": "6"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Salasana"
+                                },
+                                {
+                                    "Swedish": "Lösenord"
+                                },
+                                {
+                                    "English": "Password"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_user_pwd_plchldr",
+                            "mtee_page_component_item_seq": "7"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Sähköposti"
+                                },
+                                {
+                                    "Swedish": "E-post"
+                                },
+                                {
+                                    "English": "Email"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_user_email",
+                            "mtee_page_component_item_seq": "8"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Työsähköposti"
+                                },
+                                {
+                                    "Swedish": "Professionell e-post"
+                                },
+                                {
+                                    "English": "Professional email address"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_user_email_plchldr",
+                            "mtee_page_component_item_seq": "9"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Tyhjennä"
+                                },
+                                {
+                                    "Swedish": "Tömma?"
+                                },
+                                {
+                                    "English": "Reset"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_reset_register_btn",
+                            "mtee_page_component_item_seq": "10"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Rekisteröi"
+                                },
+                                {
+                                    "Swedish": "Registera"
+                                },
+                                {
+                                    "English": "Register Me"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_register_form_btn",
+                            "mtee_page_component_item_seq": "11"
+                        }
+                    ],
+                    "mtee_page_component_name": "pagelayout"
+                }
+            ],
+            "mtee_page_name": "register",
+            "mtee_page_route": "/"
+        },
+        {
+            "mtee_page_component_list": [
+                {
+                    "mtee_page_component_item_list": [
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Yrittäjyyskasvatuksen suunnittelu"
+                                },
+                                {
+                                    "Swedish": "Planering av företagssamhet utbildning..."
+                                },
+                                {
+                                    "English": "Planning Entrepreneurship Education"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_theme_name_01",
+                            "mtee_page_component_item_seq": "1"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Yrittäjyyskasvatus oppilitoksessani"
+                                },
+                                {
+                                    "Swedish": "Företagssamhet utbildning i min institut..."
+                                },
+                                {
+                                    "English": "Entrepreneurship Education in my School"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_theme_name_02",
+                            "mtee_page_component_item_seq": "2"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Yrittäjyyskasvatuksen menetelmiä"
+                                },
+                                {
+                                    "Swedish": "Metoder av företagssamhet utbildning..."
+                                },
+                                {
+                                    "English": "Methods for Entrepreneurship Education"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_theme_name_03",
+                            "mtee_page_component_item_seq": "3"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Verkostojen hyödyntäminen"
+                                },
+                                {
+                                    "Swedish": "Utnyttja nätverk..."
+                                },
+                                {
+                                    "English": "Utilizing Networks"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_theme_name_04",
+                            "mtee_page_component_item_seq": "4"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Oppijoiden ohjaus"
+                                },
+                                {
+                                    "Swedish": "Ledning av lärjunge..."
+                                },
+                                {
+                                    "English": "Guiding the Learners"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_theme_name_05",
+                            "mtee_page_component_item_seq": "5"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Yrittäjyyden tärkeys"
+                                },
+                                {
+                                    "Swedish": "Viktighet av företagssamhet..."
+                                },
+                                {
+                                    "English": "Importance of Entrepreneurship"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_theme_name_06",
+                            "mtee_page_component_item_seq": "6"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Taustatiedot"
+                                },
+                                {
+                                    "Swedish": "Bakgrund infomation"
+                                },
+                                {
+                                    "English": "Background information"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_theme_name_07",
+                            "mtee_page_component_item_seq": "7"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Campaign Code"
+                                },
+                                {
+                                    "Swedish": "Kampanjkod..."
+                                },
+                                {
+                                    "English": "Campaign Code"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_user_campaign_code",
+                            "mtee_page_component_item_seq": "11"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Syötä kampanjakoodi"
+                                },
+                                {
+                                    "Swedish": "Ge en kampanjkod..."
+                                },
+                                {
+                                    "English": "Enter a Campaign Code"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_user_campaign_code_plchldr",
+                            "mtee_page_component_item_seq": "12"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Takaisin"
+                                },
+                                {
+                                    "Swedish": "Tillbaka"
+                                },
+                                {
+                                    "English": "Back"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_back_btn",
+                            "mtee_page_component_item_seq": "13"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Seuraava"
+                                },
+                                {
+                                    "Swedish": "Nästa"
+                                },
+                                {
+                                    "English": "Next"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_next_btn",
+                            "mtee_page_component_item_seq": "14"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Lähetä"
+                                },
+                                {
+                                    "Swedish": "Sänd"
+                                },
+                                {
+                                    "English": "Submit"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_submit_btn",
+                            "mtee_page_component_item_seq": "15"
+                        }
+                    ],
+                    "mtee_page_component_name": "pagelayout"
+                }
+            ],
+            "mtee_page_name": "questionaire",
+            "mtee_page_route": "/"
+        },
+        {
+            "mtee_page_component_list": [
+                {
+                    "mtee_page_component_item_list": [
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Tervetuloa"
+                                },
+                                {
+                                    "Swedish": "Welkom"
+                                },
+                                {
+                                    "English": "Welcome"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_feedback_welcome_text",
+                            "mtee_page_component_item_seq": "1"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Palaute"
+                                },
+                                {
+                                    "Swedish": "Återkoppling"
+                                },
+                                {
+                                    "English": "Feedback For Your Responses"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_feedback_title_text",
+                            "mtee_page_component_item_seq": "2"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Palaute näytöllä näkyvät kaikki kertasi, jolloin olet vastannut kyselyyn. Lähetä painikkeen painamisen jälkeen oletuksena ylimpänä näkyvä viimeinen vastauskerta on aktiivisena. Kunkin kysymysryhmän palautteen saat näkyville klikkaamalla kysymysryhmää. Halutessasi myöhemmin palata katsomaan palautettasi pääset siihen kirjautumisen jälkeen valitsemalla alkunäytöltä kohdan Palaute. Valitse vastauskerta, jota haluat tarkastella. Valitse kysymysryhmä, jonka palautetta haluat katsoa. Palautteet säilyvät tietokannassa. Näin pääset seuraamaan kehittymistäsi."
+                                },
+                                {
+                                    "Swedish": "Äterkoppling anvisningar hit..."
+                                },
+                                {
+                                    "English": "In Feedback page you can find all the dates when you have given responses for the query. You can select the date for which you want to see the feedback. To see the feedback for each question theme, please click the theme. If you want later to check your feedback you get here by clicking Feedback on navigation bar. Select the question theme which feedback you want to see. Feedback is saved in the database and it enables you to follow your development."
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mmtee_feedback_help_text",
+                            "mtee_page_component_item_seq": "3"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Your Responses"
+                                },
+                                {
+                                    "Swedish": "Je antwoorden"
+                                },
+                                {
+                                    "English": "Your Responses"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_feedback_help_text",
+                            "mtee_page_component_item_seq": "4"
+                        },
+                        {
+                            "comment": "this is just a comment",
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "Details"
+                                },
+                                {
+                                    "Swedish": "Detaljer"
+                                },
+                                {
+                                    "English": "Details"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_feedback_dates_panel",
+                            "mtee_page_component_item_seq": "5"
+                        }
+                    ],
+                    "mtee_page_component_name": "pagelayout"
+                }
+            ],
+            "mtee_page_name": "feedback",
+            "mtee_page_route": "/"
+        },
+        {
+            "mtee_page_component_list": [
+                {
+                    "mtee_page_component_item_list": [
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "MIKÄ MITTARISTO?"
+                                },
+                                {
+                                    "Swedish": "VILKEN MÄTARE?"
+                                },
+                                {
+                                    "English": "WHAT KIND OF TOOL?"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_app_info_header",
+                            "mtee_page_component_item_seq": "1"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "MTEE (Measurement Tool for Entrepreneurship Education) on Internet-pohjainen maksuton työkalu opettajille. Käyttäminen alkaa rekisteröitymällä, eli henkilökohtaisen käyttäjätunnuksen ja salasanan luomisella. Näin muodostuu henkilökohtainen profiili, jonka avulla voit seurata kehittymistäsi vastauskertojen välillä. Kirjaudu sisään näytöllä oleva Unohtuiko salasana palvelu auttaa, mikäli olet jo aiemmin käyttänyt mittaristoa, mutta salasana on unohtunut."
+                                },
+                                {
+                                    "Swedish": "Det här är MTEE mätären's infotext 1.."
+                                },
+                                {
+                                    "English": "MTEE info page text1."
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_app_infoText1",
+                            "mtee_page_component_item_seq": "2"
+                        },
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "MTEE mittariston info sivun teksti 2..."
+                                },
+                                {
+                                    "Swedish": "Det här är MTEE mätären's infotext 2 ..."
+                                },
+                                {
+                                    "English": "MTEE info page text2..."
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_app_infoText2",
+                            "mtee_page_component_item_seq": "3"
+                        }
+                    ],
+                    "mtee_page_component_name": "pagelayout"
+                }
+            ],
+            "mtee_page_name": "info",
+            "mtee_page_route": "/"
+        },
+        {
+            "mtee_page_component_list": [
+                {
+                    "mtee_page_component_item_list": [
+                        {
+                            "mtee_page_component_item_display": [
+                                {
+                                    "Finnish": "MTEE - Usein Kysytyt kysymykset (FAQ)"
+                                },
+                                {
+                                    "Swedish": "MTEE - FAQ rubrik text ..."
+                                },
+                                {
+                                    "English": "MTEE FAQ page header text"
+                                }
+                            ],
+                            "mtee_page_component_item_name": "mtee_app_faq_header",
+                            "mtee_page_component_item_seq": "1"
+                        }
+                    ],
+                    "mtee_page_component_name": "pagelayout"
+                }
+            ],
+            "mtee_page_name": "faq",
+            "mtee_page_route": "/"
+        }
+    ],
+    "setting_type": "static_content"
+}
