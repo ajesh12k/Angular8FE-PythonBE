@@ -1,0 +1,87 @@
+<div class="container-lg jumbotron-fluid col-md-10 col-lg-10">
+
+
+
+  <mat-toolbar class="expanded-toolbar">
+    <!--//this code is new navbar navbar-expand-lg navbar-dark " style="color: black; background-color: white;"-->
+    <span>
+      <button mat-button routerLink="">
+        <img style="max-width:72px; margin-top:10px" src="./assets/images/mtee_logo.png" alt=" F I N   M T E E"> {{title}}
+      </button>
+    </span>
+    <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+
+      <button mat-button [routerLink]="['/faq']"> {{navComponentItems.faq}}</button>
+      <button mat-button [routerLink]="['/info']"> {{navComponentItems.info}}</button>
+
+      <mat-form-field appearance="outline">
+        <mat-icon>language</mat-icon>
+        <mat-select (selectionChange)="onSelectionChange($event)" placeholder="" [(value)]="selectedLanguage">
+          <mat-option *ngFor="let language of languageList" [value]="language">
+            {{language}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <!--<button mat-button (click)="clearCookies()" *ngIf="this.cookieService.get('UserId') == '*' || this.cookieService.get('UserId') == '-' || this.cookieService.get('UserId') == '#'"> {{navComponentItems.login}}</button>-->
+      <button mat-button (click)="clearCookies()" *ngIf="this.cookieService.get('UserId') != ''">Home</button>
+      <!--<button mat-button routerLink="register" *ngIf="this.cookieService.get('UserId') == ''"> {{navComponentItems.register}}</button>-->
+      <button mat-button [routerLink]="['/questions']" *ngIf="this.cookieService.get('showFeedback') == 'N'"> {{navComponentItems.questions}}</button>
+      <button mat-button [routerLink]="['/feedback']" *ngIf="this.cookieService.get('showFeedback') == 'Y'"> {{navComponentItems.feedback}}</button>
+      <!--<button mat-button routerLink="changepwd" *ngIf="this.cookieService.get('UserId') != ''"> {{navComponentItems.changepwd}}</button>-->
+      <button mat-button [routerLink]="['/logout']" *ngIf="this.cookieService.get('UserId') != '' && this.cookieService.get('UserId') != '*'"> {{navComponentItems.logout}}</button>
+      <!--</button>-->
+    </div>
+
+    <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-menu x-position="before" #menu="matMenu">
+
+    <button mat-button [routerLink]="['/faq']"> {{navComponentItems.faq}}</button>
+    <button mat-button [routerLink]="['/info']"> {{navComponentItems.info}}</button>
+
+    <mat-form-field appearance="outline">
+      <mat-icon>language</mat-icon>
+      <mat-select (selectionChange)="onSelectionChange($event)" placeholder="" [(value)]="selectedLanguage">
+        <mat-option *ngFor="let language of languageList" [value]="language">
+          {{language}}
+        </mat-option>
+
+      </mat-select>
+    </mat-form-field>
+
+    <!--<button mat-button (click)="clearCookies()" *ngIf="this.cookieService.get('UserId') == '*' || this.cookieService.get('UserId') == '-' || this.cookieService.get('UserId') == '#'"> {{navComponentItems.login}}</button>-->
+      <button mat-button (click)="clearCookies()" *ngIf="this.cookieService.get('UserId') != ''">Home</button>
+      <!--<button mat-button routerLink="register" *ngIf="this.cookieService.get('UserId') == ''"> {{navComponentItems.register}}</button>-->
+      <button mat-button [routerLink]="['/questions']" *ngIf="this.cookieService.get('showFeedback') == 'N'"> {{navComponentItems.questions}}</button>
+      <button mat-button [routerLink]="['/feedback']" *ngIf="this.cookieService.get('showFeedback') == 'Y'"> {{navComponentItems.feedback}}</button>
+      <!--<button mat-button routerLink="changepwd" *ngIf="this.cookieService.get('UserId') != ''"> {{navComponentItems.changepwd}}</button>-->
+      <button mat-button [routerLink]="['/logout']" *ngIf="this.cookieService.get('UserId') != '' && this.cookieService.get('UserId') != '*'"> {{navComponentItems.logout}}</button>
+      <!--</button>-->
+
+
+  </mat-menu>
+
+  <router-outlet></router-outlet>
+
+  <div class="row">
+    <div class="md-col-12 jumbotron-fluid">
+
+      <div class="padding100"></div>
+
+      <div class="row ">
+        <div class="col-lg-12">
+          <p class="text-center">©2020 All rights reserved.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+</div>

@@ -1,0 +1,70 @@
+.feedbackBox{
+    background-color: cadetblue;
+  }
+  .titleBox{
+    background-color: #fffcd7;
+    color: #020000;
+    padding: 20px;
+  }
+  .buttonBox{
+    justify-items: center;
+    background-color: rgba(255, 174, 106, 0.01);
+    color: #fffefa;
+  }
+  .dateBox{
+    background-color: #ffad7e;
+    color: #fffefa;
+    justify-items: center;
+  }
+  .parameterTitle{
+    background-color: rgba(172, 166, 87, 0.1);
+    color: #020000;
+    justify-items: center;
+  }
+  
+  
+  ::ng-deep .mat-step-header .mat-step-icon-selected { 
+      background-color: green;
+  
+   }
+   ::ng-deep .mat-step-header {
+   color:red;
+   }
+  .big-texts{
+  font-size:16px;
+  }
+  .alert {
+    background-color:#9bb464;
+    color: white;
+  }
+  .text-wrap {
+    color: #df7f38;
+  }
+  .mat-step-label {
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    font-size: 8px;
+    overflow: visible;
+    text-overflow: fade;
+    color: #df7f38;
+  }
+  ::ng-deep .mat-step-header .mat-step-icon-selected { 
+    background-color: #9bb464;
+   }
+  ::ng-deep .mat-step-icon-state-edit .mat-step-icon .mat-step-header {
+    background-color: #df7f38;
+  }
+  ::ng-deep .mat-icon .material-icons .ng-star-inserted {
+    background-color: #df7f38;
+  }
+  .btn-outline-info {
+    background-color: #df7f38;
+    border-color: #9bb464;
+    color: white;
+  }
+  .btn-outline-success {
+    background-color: #648BA2;
+    border-color: white;
+    color: white;
+  }

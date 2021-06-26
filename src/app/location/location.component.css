@@ -1,0 +1,46 @@
+  ::ng-deep .successSnackbar {
+    background-color: #9bb464;
+    color:white;
+  }
+  ::ng-deep .errorSnackbar {
+    background-color: #ffa20d;
+    color:white;
+  }
+.example-action-buttons {
+  padding-bottom: 20px;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+.search_form_code_mun {
+ background-color: #9bb464;
+ color:white;
+}
+
+.update_form {
+ background-color: #9bb464;
+ color:black;
+}
+.errorMessage{
+  color: black;
+  background-color: #ff9a09;
+  text-align: center;
+  font-size: large;
+}
+.successMessage{
+  color: rgb(255, 254, 250);
+  background-color: #9bb464;
+  text-align: center;
+  font-size: large;
+}

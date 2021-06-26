@@ -1,0 +1,101 @@
+<div class="container-lg col-md-12">
+            <div class="example-action-buttons">
+                   <button mat-button (click)="accordion.openAll()">Expand All</button>
+                   <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+            </div>
+            <mat-accordion class="example-headers-align" multi>
+                            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                                    <mat-expansion-panel-header>
+                                        <mat-panel-title><h2>Create a New Campaign</h2></mat-panel-title>
+                                        <mat-panel-description>Unique Campaign Code is required<mat-icon>code</mat-icon></mat-panel-description>
+                                    </mat-expansion-panel-header>
+                                    <div class="row container-fluid jumbotron" id="change_campaign_setting_panel">
+                                                   <form class="col-md-12 col-xs-12 jumbotron" name="createCampaignForm" role="form" id="createCampaignForm" [formGroup]="createCampaignForm">
+                                                     <div class="row jumbotron-fluid">
+                                                         <div class="form-group col-md-2 col-xs-12">
+                                                            <label for="mtee_campaign_code" >Campaign Code</label>
+                                                            <input type="text" id="mtee_campaign_code" formControlName = "mtee_campaign_code" class="form-control" placeholder="Enter a unique Campaign Code" required autofocus>
+                                                         </div>
+                                                         <div class="form-group col-md-2 col-xs-12">
+                                                           <label for="mtee_campaign_type" >Campaign Type</label>
+                                                           <input type="text" id="mtee_campaign_type" formControlName = "mtee_campaign_type" class="form-control" placeholder="Enter a Campaign Type" required autofocus>
+                                                         </div>
+                                                         <div class="form-group col-md-3 col-xs-12">
+                                                           <label for="mtee_campaign_description" >Campaign Description (Detail)</label>
+                                                           <input type="text" id="mtee_campaign_description" formControlName = "mtee_campaign_description" class="form-control" placeholder="Short Campaign Description">
+                                                         </div>
+
+                                                         <div class="col-md-2 col-xs-12 form-group">
+                                                                      <mat-form-field>
+                                                                        <mat-label>Start date</mat-label>
+                                                                        <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker1" (dateChange)="selectedStartDate($event)">
+                                                                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                                                                        <mat-datepicker touchUi="true" #picker1></mat-datepicker>
+                                                                      </mat-form-field>
+                                                         </div>
+
+                                                         <div class="col-md-2 col-xs-12 form-group">
+                                                                      <mat-form-field>
+                                                                        <mat-label>End date</mat-label>
+                                                                        <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker2" (dateChange)="selectedEndDate($event)">
+                                                                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                                                        <mat-datepicker touchUi="true" #picker2></mat-datepicker>
+                                                                      </mat-form-field>
+                                                         </div>
+
+                                                         <div class="form-group col-md-1 col-xs-12">
+                                                              <button type="submit" class="btn action-button"  ng-disabled="createCampaignForm.$invalid" (click)="createcampaign()"  id="mtee_create_campaign_btn">Create Campaign</button>
+                                                         </div>
+                                                     </div>
+                                                   </form>
+                                    </div>
+                            </mat-expansion-panel>
+
+                            <mat-expansion-panel>
+                                  <mat-expansion-panel-header>
+                                        <mat-panel-title><h2>Edit Campaign Code</h2></mat-panel-title>
+                                        <mat-panel-description>Search by Campaign Code <mat-icon>code</mat-icon></mat-panel-description>
+                                  </mat-expansion-panel-header>
+                                  <div class="row">
+                                           <form class="col-md-12 col-xs-12 jumbotron" name="searchCampaignForm" role="form" id="searchCampaignForm" [formGroup]="searchCampaignForm">
+                                                         <div class="row jumbotron-fluid">
+                                                             <div class="form-group col-md-2 col-xs-12">
+                                                                <label for="mtee_campaign_code_search" >Campaign Code</label>
+                                                                <input type="text" id="mtee_campaign_code_search" formControlName="mtee_campaign_code_search" class="form-control" placeholder="Enter a unique Campaign Code" >
+                                                             </div>
+                                                             <div class="form-group col-md-2 col-xs-12">
+                                                               <label for="mtee_campaign_type_search" >Campaign Type</label>
+                                                               <input type="text" id="mtee_campaign_type_search" formControlName="mtee_campaign_type_search" class="form-control" placeholder="Enter a Campaign Type"  autofocus>
+                                                             </div>
+                                                             <div class="form-group col-md-3 col-xs-12">
+                                                               <label for="mtee_campaign_description_search" >Campaign Description (Detail)</label>
+                                                               <input type="text" id="mtee_campaign_description_search" formControlName="mtee_campaign_description_search" class="form-control" placeholder="Short Campaign Description">
+                                                             </div>
+
+                                                             <div class="col-md-2 col-xs-12 form-group">
+                                                                          <mat-form-field>
+                                                                            <mat-label>Start date</mat-label>
+                                                                            <input matInput [matDatepicker]="picker3" (dateChange)="selectedStartDateSearch($event)">
+                                                                            <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+                                                                            <mat-datepicker touchUi="true" #picker3></mat-datepicker>
+                                                                          </mat-form-field>
+                                                             </div>
+
+                                                             <div class="col-md-2 col-xs-12 form-group">
+                                                                          <mat-form-field>
+                                                                            <mat-label>End date</mat-label>
+                                                                            <input matInput [matDatepicker]="picker4" (dateChange)="selectedEndDateSearch($event)">
+                                                                            <mat-datepicker-toggle matSuffix [for]="picker4"></mat-datepicker-toggle>
+                                                                            <mat-datepicker touchUi="true" #picker4></mat-datepicker>
+                                                                          </mat-form-field>
+                                                             </div>
+
+                                                             <div class="form-group col-md-1 col-xs-12">
+                                                                  <button type="submit" class="btn action-button"  ng-disabled="searchCampaignForm.$invalid" (click)="searchcampaign()"  id="mtee_search_campaign_btn">Search Campaign</button>
+                                                             </div>
+                                                         </div>
+                                           </form>
+                                  </div>
+                            </mat-expansion-panel>
+            </mat-accordion>
+</div>

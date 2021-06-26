@@ -1,0 +1,170 @@
+<div class="container-lg col-md-10">
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="alert alert-dismissible">
+          <strong class="">{{feedbackComponentItems.mtee_feedback_tagline }} {{this.cookieService.get('UserId')}}! &nbsp; {{feedbackComponentItems.mtee_feedback_explanation}}. </strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <mat-expansion-panel>
+
+          <mat-expansion-panel-header>
+            {{feedbackComponentItems.mtee_feedback_details }}
+          </mat-expansion-panel-header>
+
+          <div class="jumbotron">
+            <strong class="">{{feedbackComponentItems.mtee_feedback_instruction}} </strong>
+          </div>
+
+        </mat-expansion-panel>
+      </div>
+    </div>
+
+    <div class="row jumbotron">
+
+      <div class="col-sm-2 p-3" >
+        <button class="btn btn-block btn-outline-info">{{feedbackComponentItems.mtee_feedback_responses}} </button>
+        <div *ngFor="let userDate of listUserResponseDate; let index = index; let last = last;" (click)="selectedDate($event, userDate)">
+          <button  class="btn btn-outline-success btn-block"
+                   [class.active]="userDate == selectedCategory" (click)="changeCategory(userDate)">
+                    {{userDate |date: 'yyyy-MM-dd'}}
+          </button>
+        </div>
+      </div>
+      <div class="col-sm-10">
+
+        <mat-horizontal-stepper labelPosition="bottom">
+          <mat-step class=" " *ngFor="let feedback of listFeedbackParameter; let k = index; let last = last;">
+
+            <ng-template matStepLabel>
+              <span>
+                <p class="text-wrap">
+                  {{feedback.mtee_feedback_description_1[selectedLanguage]}}
+                </p>
+              </span>
+            </ng-template>
+
+            <mat-card class="card shadow-lg p-3 mb-5 bg-green rounded jumbotron">
+
+              <div *ngFor="let themeFeedback of listUserResponses; index as j">
+
+
+                <mat-card-content *ngIf="k===0" class="big-texts text-justify">
+
+                  <div *ngIf="selectedLanguage==='Finnish'">
+                    {{themeFeedback.theme1.mtee_feedback_description_FIN}}
+                  </div>
+
+                  <div *ngIf="selectedLanguage==='Swedish'">
+                    {{themeFeedback.theme1.mtee_feedback_description_SWE}}
+                  </div>
+
+                  <div *ngIf="selectedLanguage==='English'">
+                    {{themeFeedback.theme1.mtee_feedback_description_ENG}}
+                  </div>
+                  <div></div>
+                  <button mat-button mat-raised-button class="btn btn-lg btn-outline-dark" (click)="goToSpecificUrl(themeFeedback.theme1.mtee_feedback_url)">{{themeFeedback.theme1.mtee_feedback_url}}</button>
+                </mat-card-content>
+
+                <mat-card-content *ngIf="k===1" class="big-texts text-justify">
+                  <div *ngIf="selectedLanguage==='Finnish'">
+                    {{themeFeedback.theme2.mtee_feedback_description_FIN}}
+                  </div>
+
+                  <div *ngIf="selectedLanguage==='Swedish'">
+                    {{themeFeedback.theme2.mtee_feedback_description_SWE}}
+                  </div>
+
+                  <div *ngIf="selectedLanguage==='English'">
+                    {{themeFeedback.theme2.mtee_feedback_description_ENG}}
+                  </div>
+                  <div></div>
+                  <button mat-button mat-raised-button class="btn btn-lg btn-outline-dark" (click)="goToSpecificUrl(themeFeedback.theme2.mtee_feedback_url)">{{themeFeedback.theme2.mtee_feedback_url}}</button>
+                </mat-card-content>
+
+                <mat-card-content *ngIf="k===2" class="big-texts text-justify">
+
+                  <div *ngIf="selectedLanguage==='Finnish'">
+                    {{themeFeedback.theme3.mtee_feedback_description_FIN}}
+                  </div>
+
+                  <div *ngIf="selectedLanguage==='Swedish'">
+                    {{themeFeedback.theme3.mtee_feedback_description_SWE}}
+                  </div>
+
+                  <div *ngIf="selectedLanguage==='English'">
+                    {{themeFeedback.theme3.mtee_feedback_description_ENG}}
+                  </div>
+                  <div></div>
+                  <button mat-button mat-raised-button class="btn btn-lg btn-outline-dark" (click)="goToSpecificUrl(themeFeedback.theme3.mtee_feedback_url)">{{themeFeedback.theme3.mtee_feedback_url}}</button>
+                </mat-card-content>
+
+                <mat-card-content *ngIf="k===3" class="big-texts text-justify">
+
+                  <div *ngIf="selectedLanguage==='Finnish'">
+                    {{themeFeedback.theme4.mtee_feedback_description_FIN}}
+                  </div>
+
+                  <div *ngIf="selectedLanguage==='Swedish'">
+                    {{themeFeedback.theme4.mtee_feedback_description_SWE}}
+                  </div>
+
+                  <div *ngIf="selectedLanguage==='English'">
+                    {{themeFeedback.theme4.mtee_feedback_description_ENG}}
+                  </div>
+                  <div></div>
+                  <button mat-button mat-raised-button class="btn btn-lg btn-outline-dark" (click)="goToSpecificUrl(themeFeedback.theme4.mtee_feedback_url)">{{themeFeedback.theme4.mtee_feedback_url}}</button>
+                </mat-card-content>
+
+
+                <mat-card-content *ngIf="k===4" class="big-texts text-justify">
+
+                  <div *ngIf="selectedLanguage==='Finnish'">
+                    {{themeFeedback.theme5.mtee_feedback_description_FIN}}
+                  </div>
+
+                  <div *ngIf="selectedLanguage==='Swedish'">
+                    {{themeFeedback.theme5.mtee_feedback_description_SWE}}
+                  </div>
+
+                  <div *ngIf="selectedLanguage==='English'">
+                    {{themeFeedback.theme5.mtee_feedback_description_ENG}}
+                  </div>
+                  <div></div>
+                  <button mat-button mat-raised-button class="btn btn-lg btn-outline-dark" (click)="goToSpecificUrl(themeFeedback.theme5.mtee_feedback_url)">{{themeFeedback.theme5.mtee_feedback_url}}</button>
+                </mat-card-content>
+
+                <mat-card-content *ngIf="k===5" class="big-texts text-justify">
+
+                  <div *ngIf="selectedLanguage==='Finnish'">
+                    {{themeFeedback.theme6.mtee_feedback_description_FIN}}
+                  </div>
+
+                  <div *ngIf="selectedLanguage==='Swedish'">
+                    {{themeFeedback.theme6.mtee_feedback_description_SWE}}
+                  </div>
+
+                  <div *ngIf="selectedLanguage==='English'">
+                    {{themeFeedback.theme6.mtee_feedback_description_ENG}}
+                  </div>
+                  <div></div>
+                  <button mat-button mat-raised-button class="btn btn-lg btn-outline-dark" (click)="goToSpecificUrl(themeFeedback.theme6.mtee_feedback_url)">{{themeFeedback.theme6.mtee_feedback_url}}</button>
+                </mat-card-content>
+
+              </div>
+
+            </mat-card>
+
+          </mat-step>
+
+        </mat-horizontal-stepper>
+
+      </div>
+
+   </div>
+
+  </div>

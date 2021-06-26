@@ -1,0 +1,190 @@
+<div class="container-lg col-md-12">
+
+  <div class="jumbotron" style="background-color: gray;">
+      <div class="col-md-12">
+        <div class="example-action-buttons">
+             <button mat-button (click)="accordion.openAll()">Expand All</button>
+             <button mat-button (click)="accordion.closeAll()">Collapse All</button>
+        </div>
+        <mat-accordion class="example-headers-align" multi>
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                  <mat-expansion-panel-header>
+                      <mat-panel-title><h2>Edit Municipality Details Using Code</h2></mat-panel-title>
+                      <mat-panel-description>Search Municipality By Code<mat-icon>code</mat-icon></mat-panel-description>
+                  </mat-expansion-panel-header>
+                  <div class="row">
+
+                              <div class="col-md-12 jumbotron search_form_code_mun">
+                                <div class="row">
+                                  <form id="formSearchByCodeMun"  [formGroup]="formSearchByCodeMun">
+                                        <div class="form-group col-md-12">
+                                          <input type="text" class="form-control" id="mtee_municipality_code" placeholder="Municipality Code here"  formControlName="mtee_municipality_code" required>
+
+                                        </div>
+                                  </form>
+                                  <button type="button" class="btn btn-sm action-button-secondary btn-outline-dark "  (click)="searchMunicipalityByCode()">Search</button>
+                                </div>
+                              </div>
+
+                              <div class="col-md-12 jumbotron" *ngIf="found">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                      <h3>Municipality Code: </h3>{{this.searchResult.mtee_municipality_code}}
+                                    </div>
+                                    <div class="col-md-3">
+                                      <h3>Municipality Name in Finnish: </h3> {{this.searchResult.mtee_municipality_name_1}}
+                                    </div>
+                                    <div class="col-md-3">
+                                      <h3>Municipality Name in Swedish: </h3> {{this.searchResult.mtee_municipality_name_2}}
+                                    </div>
+                                    <div class="col-md-3">
+                                      <button mat-button mat-raised-button type="button" class ="submit" (click) = "clickedEdit()">
+                                          <span class="material-icons">create</span>Edit or Create
+                                      </button>
+                                      <button mat-button mat-raised-button type="button" class ="submit" (click) = "clickedDelete()">
+                                          <span class="material-icons">delete</span>Delete
+                                      </button>
+                                    </div>
+                                </div>
+                              </div>
+
+                              <div class="col-md-12 jumbotron update_form"  *ngIf="editForm" >
+                                    <div class="row">
+                                      <form id="formUpdateMunicipalityDetails"  [formGroup]="formUpdateMunicipalityDetails" class="col-md-12">
+                                            <div class ="col-md-12">
+                                              <div class="row">
+                                                   <div class ="col-md-4">
+                                                      <label id="mtee_municipality_code_new">New Municipality Code here</label>
+                                                    </div>
+                                                    <div class ="col-md-4">
+                                                      <label id="mtee_municipality_name_1_new">New Municipality Name In Finnish here</label>
+                                                    </div>
+                                                    <div class ="col-md-4">
+                                                      <label id="mtee_municipality_name_2_new">New Municipality Name In Swedish here</label>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                            <div class ="col-md-12">
+                                              <br>
+                                            </div>
+                                            <div class ="col-md-12">
+                                              <div class="row">
+                                                    <div class ="col-md-2">
+                                                      <input type="text" class = "col-md-12" formControlName="mtee_municipality_code_new" required>
+                                                    </div>
+                                                    <div class ="col-md-5">
+                                                      <input type="text" class = "col-md-12" formControlName="mtee_municipality_name_1_new" required>
+                                                    </div>
+                                                    <div class ="col-md-5">
+                                                      <input type="text" class = "col-md-12" formControlName="mtee_municipality_name_2_new" required>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                      </form>
+                                    </div>
+                                    <div class="col-md-12">
+                                                <button mat-button mat-raised-button class = "col-md-2 submit" type="button"  [disabled]="!formUpdateMunicipalityDetails.valid" (click) = "updateMunicipalityDetails()">
+                                                <span class="material-icons " >save</span>Save or Update
+                                                </button>
+                                    </div>
+                              </div>
+                  </div>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <h2>Edit Municipality Details Using Name</h2>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      Search Municipality By Name
+                      <mat-icon>text_format</mat-icon>
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
+                 <div class="row">
+                   <div class="col-md-12 jumbotron search_name_form">
+                                <div class="row">
+                                  <mat-form-field appearance="fill">
+                                     <mat-select (selectionChange)="onMunicipalitySelect($event)" placeholder=""[(value)]="selectedMunicipality1">
+                                       <mat-option  *ngFor="let municipality of municipalityListShow1" [value]="municipality">
+                                                                            {{municipality}}
+                                       </mat-option>
+                                     </mat-select>
+                                 </mat-form-field>
+                                  <form id="formSearchByNameMun"  [formGroup]="formSearchByNameMun">
+                                        <div class="form-group col-md-12">
+                                          <input type="text" class="form-control" id="mtee_municipality_name" placeholder="Municipality Name here"  formControlName="mtee_municipality_name" required>
+
+                                        </div>
+                                  </form>
+                                  <button type="button" class="btn btn-sm action-button-secondary btn-outline-dark "  (click)="searchMunicipalityByName()">Search</button>
+                                </div>
+                   </div>
+                 </div>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <h2>Edit Province Details Using Code</h2>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      Search Province By Code
+                      <mat-icon>code</mat-icon>
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
+                  <div class="row">
+                              <div class="col-md-12 jumbotron search_form_code_mun">
+                                <div class="row">
+                                  <form id="formSearchByCodePro"  [formGroup]="formSearchByCodePro">
+                                        <div class="form-group col-md-12">
+                                          <input type="text" class="form-control" id="mtee_province_code" placeholder="Province Code here"  formControlName="mtee_province_code" required>
+
+                                        </div>
+                                  </form>
+                                  <button type="button" class="btn btn-sm action-button-secondary btn-outline-dark "  (click)="searchProvinceByCode()">Search</button>
+                                </div>
+                              </div>
+                  </div>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <h2>Edit Province Details Using Name</h2>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      Search Province By Name
+                      <mat-icon>text_format</mat-icon>
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
+                  <div class="row">
+                    <div class="">
+                                        <mat-form-field>
+                                          <mat-label>Provience</mat-label>
+                                          <mat-select (selectionChange)="onProvienceSelect($event)" placeholder=""[(value)]="selectedProvience">
+                                            <mat-option *ngFor="let provience of provienceList" [value]="provience">
+                                              {{provience}}
+                                            </mat-option>
+                                          </mat-select>
+                                        </mat-form-field>
+                    </div>
+                  </div>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <h2>Edit History</h2>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      Edit Details History
+                      <mat-icon>history</mat-icon>
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
+                  <div class="row"></div>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
+  </div>
+</div>
